@@ -23,7 +23,7 @@ namespace CalculaJuros.TaxaJuros.API.Controller
         [FunctionName("TaxaJurosFunction")]
         [OpenApiOperation("list", "Taxa Juros API")]
         public async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "taxaJuros")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "taxaJuros")] HttpRequest req,
             ILogger log)
         {
            return new OkObjectResult(await _taxaJurosService.GetTaxaJurosAsync());

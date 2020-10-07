@@ -11,12 +11,12 @@ namespace CalculaJuros.Domain.Shared.HttpHelper
 
         public HttpClientCaller(string url)
         {
-            _url = url;
+            _url = url ?? "https://taxajurosfunction.azurewebsites.net/api/taxaJuros?code=6mck77692Apk5EeqmtiL3rwtus6ruscwjULC1XtzuEiOiwDpN3T54A==";
         }
 
         public HttpClientCaller()
         {
-            _url = "http://localhost:7071/api/taxaJuros";
+            _url = "https://taxajurosfunction.azurewebsites.net/api/taxaJuros?code=6mck77692Apk5EeqmtiL3rwtus6ruscwjULC1XtzuEiOiwDpN3T54A==";
         }
 
         public async Task<double> GetTaxaJuros(Dictionary<string,string> erros)
@@ -31,7 +31,7 @@ namespace CalculaJuros.Domain.Shared.HttpHelper
                     resultado = await response.Content.ReadAsStringAsync();
                 }
 
-                return Convert.ToDouble(resultado);
+                return Convert.ToDouble(resultado, System.Globalization.CultureInfo.InvariantCulture);
             }
             catch(HttpRequestException)
             {
