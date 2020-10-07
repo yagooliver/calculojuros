@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{ADBC3E22-73A4-4815-AF31-DB0FB1FD46E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{FBCAE8CB-B41A-4330-87D0-2DDD7D795B5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{76088D74-E90A-4A76-8BD0-FF97C1C929A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functions", "Functions", "{53B5FE17-03B4-46C4-856D-0A3671D4C785}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A87B2C05-A814-4DCC-8A8B-BB8895E497E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Domain.Core", "CalculaJuros.Domain.Core\CalculaJuros.Domain.Core.csproj", "{9161FC4D-9FC3-45EB-99E7-02D048F358EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Application", "CalculaJuros.Application\CalculaJuros.Application.csproj", "{34C8BFC8-698D-4DCE-9FD2-C37C5C0352FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Application.Test", "CalculaJuros.Application.Test\CalculaJuros.Application.Test.csproj", "{F49287F8-F60B-457D-BB10-F18567A08DB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.CrossCutting.IOC", "CalculaJuros.CrossCutting.IOC\CalculaJuros.CrossCutting.IOC.csproj", "{79C44E6B-E9C0-44AC-B51E-17C11B74EB81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.TaxaJuros", "CalculaJuros.TaxaJuros\CalculaJuros.TaxaJuros.csproj", "{B8E0F227-55A5-4972-9434-084032A6C4CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Domain.Shared", "CalculaJuros.Domain.Shared\CalculaJuros.Domain.Shared.csproj", "{EB180D64-8C09-40B2-88F1-5500FAD0E164}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.CrossCutting.Bus", "CalculaJuros.CrossCutting.Bus\CalculaJuros.CrossCutting.Bus.csproj", "{E2CEA847-B4F3-48F0-B958-34322BE974DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculoJuros.CalculoApi", "CalculoJuros.CalculoApi\CalculoJuros.CalculoApi.csproj", "{6AF80483-26CC-4812-811E-1E318A0B6D04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros.Domain.Test", "CalculaJuros.Domain.Test\CalculaJuros.Domain.Test.csproj", "{DDF0B4DF-F0AB-46F2-B401-48AD33F6EFA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9161FC4D-9FC3-45EB-99E7-02D048F358EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9161FC4D-9FC3-45EB-99E7-02D048F358EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9161FC4D-9FC3-45EB-99E7-02D048F358EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9161FC4D-9FC3-45EB-99E7-02D048F358EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C8BFC8-698D-4DCE-9FD2-C37C5C0352FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C8BFC8-698D-4DCE-9FD2-C37C5C0352FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C8BFC8-698D-4DCE-9FD2-C37C5C0352FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C8BFC8-698D-4DCE-9FD2-C37C5C0352FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F49287F8-F60B-457D-BB10-F18567A08DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F49287F8-F60B-457D-BB10-F18567A08DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F49287F8-F60B-457D-BB10-F18567A08DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F49287F8-F60B-457D-BB10-F18567A08DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79C44E6B-E9C0-44AC-B51E-17C11B74EB81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79C44E6B-E9C0-44AC-B51E-17C11B74EB81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79C44E6B-E9C0-44AC-B51E-17C11B74EB81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79C44E6B-E9C0-44AC-B51E-17C11B74EB81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E0F227-55A5-4972-9434-084032A6C4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E0F227-55A5-4972-9434-084032A6C4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E0F227-55A5-4972-9434-084032A6C4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E0F227-55A5-4972-9434-084032A6C4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB180D64-8C09-40B2-88F1-5500FAD0E164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB180D64-8C09-40B2-88F1-5500FAD0E164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB180D64-8C09-40B2-88F1-5500FAD0E164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB180D64-8C09-40B2-88F1-5500FAD0E164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2CEA847-B4F3-48F0-B958-34322BE974DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2CEA847-B4F3-48F0-B958-34322BE974DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2CEA847-B4F3-48F0-B958-34322BE974DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2CEA847-B4F3-48F0-B958-34322BE974DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AF80483-26CC-4812-811E-1E318A0B6D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF80483-26CC-4812-811E-1E318A0B6D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF80483-26CC-4812-811E-1E318A0B6D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF80483-26CC-4812-811E-1E318A0B6D04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF0B4DF-F0AB-46F2-B401-48AD33F6EFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF0B4DF-F0AB-46F2-B401-48AD33F6EFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF0B4DF-F0AB-46F2-B401-48AD33F6EFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF0B4DF-F0AB-46F2-B401-48AD33F6EFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9161FC4D-9FC3-45EB-99E7-02D048F358EB} = {ADBC3E22-73A4-4815-AF31-DB0FB1FD46E7}
+		{34C8BFC8-698D-4DCE-9FD2-C37C5C0352FD} = {76088D74-E90A-4A76-8BD0-FF97C1C929A9}
+		{F49287F8-F60B-457D-BB10-F18567A08DB1} = {A87B2C05-A814-4DCC-8A8B-BB8895E497E6}
+		{79C44E6B-E9C0-44AC-B51E-17C11B74EB81} = {FBCAE8CB-B41A-4330-87D0-2DDD7D795B5E}
+		{B8E0F227-55A5-4972-9434-084032A6C4CF} = {53B5FE17-03B4-46C4-856D-0A3671D4C785}
+		{EB180D64-8C09-40B2-88F1-5500FAD0E164} = {ADBC3E22-73A4-4815-AF31-DB0FB1FD46E7}
+		{E2CEA847-B4F3-48F0-B958-34322BE974DF} = {FBCAE8CB-B41A-4330-87D0-2DDD7D795B5E}
+		{6AF80483-26CC-4812-811E-1E318A0B6D04} = {53B5FE17-03B4-46C4-856D-0A3671D4C785}
+		{DDF0B4DF-F0AB-46F2-B401-48AD33F6EFA6} = {A87B2C05-A814-4DCC-8A8B-BB8895E497E6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B47CE68-29EB-43D7-8F23-8B77616DB9C8}
+	EndGlobalSection
+EndGlobal
