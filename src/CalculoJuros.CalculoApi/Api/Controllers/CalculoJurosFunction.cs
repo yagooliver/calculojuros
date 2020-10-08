@@ -34,15 +34,20 @@ namespace CalculoJuros.CalculoApi.Api.Controllers
 
             string valorInicial = req.Query["valorInicial"];
             string meses = req.Query["meses"];
+            if(string.IsNullOrEmpty(valorInicial) || !decimal.TryParse(valorInicial, out decimal valorCalculo))
+                return new BadRequestObjectResult("Valor invalido");
 
-            var command = new CalculaJurosCommand(decimal.Parse(valorInicial), int.Parse(meses));
+            if (string.IsNullOrEmpty(meses) || !int.TryParse(meses, out int mes))
+                return new BadRequestObjectResult("Mês invalido");
+
+            var command = new CalculaJurosCommand(valorCalculo, mes);
             var resultado = await _mediator.SendCommandResult(command);
             var valor = resultado.ToStringDecimal();
             return Response(valor);
         }
 
         [FunctionName("ShowMeTheCodeFunction")]
-        [Aliencube.AzureFunctions.Extensions.OpenApi.Core.Attributes.OpenApiOperation("list", "Calculo API")]
+        [OpenApiOperation("list", "Calculo API")]
         public IActionResult GetUrlGit(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "showmethecode")] HttpRequest req,
             ILogger log)

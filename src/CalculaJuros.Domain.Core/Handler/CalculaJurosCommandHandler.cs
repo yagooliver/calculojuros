@@ -32,10 +32,11 @@ namespace CalculaJuros.Domain.Core.Handler
                     foreach(var erro in erros)
                         _mediatorHandler.RaiseEvent(new NotificacaoDominio(erro.Key, erro.Value));
                 else
-                { 
-                    var resultado = (double)request.Valor * Math.Pow((1 + (double)jurosPercentual), request.Meses);
+                {
+                    var potencia = Math.Pow(1 + jurosPercentual, request.Meses);
+                    var montante = (double)request.Valor * potencia;
 
-                    return Task.FromResult((decimal)Math.Truncate(100 * resultado) / 100);
+                    return Task.FromResult((decimal)Math.Truncate(100 * montante) / 100);
                 }
             }
             else

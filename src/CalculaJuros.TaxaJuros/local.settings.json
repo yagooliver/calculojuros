@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "OpenApi__Info__Version": "3.1",
+    "OpenApi__Info__Title": "Calculo de juros composto",
+    "OpenApi__Info__Description": "Conjuto de apis para calcular juros compostos",
+    "OpenApi__Info__TermsOfService": "https://github.com/yagooliver",
+    "OpenApi__Info__Contact__Name": "Yago Oliveira",
+    "OpenApi__Info__Contact__Email": "yago.oliveira.ce@protonmail.com",
+    "OpenApi__Info__Contact__Url": "https://github.com/yagooliver",
+    "OpenApi__Info__License__Name": "MIT",
+    "OpenApi__Info__License__Url": "http://opensource.org/licenses/MIT",
+    "OpenApi__ApiKey": ""
+  }
+}
