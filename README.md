@@ -36,6 +36,6 @@ Você pode executar as functions pelo proprio visual studio ou acessar os links 
 
 Apis:
 
-- https://calculojurosfunction.azurewebsites.net/api/taxaJuros
+- https://taxajurosfunction.azurewebsites.net/api/taxaJuros
 - https://calculojurosfunction.azurewebsites.net/api/calculaJuros?valorInicial=100&meses=5
 - https://calculojurosfunction.azurewebsites.net/api/showmethecode
